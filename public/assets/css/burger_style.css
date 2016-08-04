@@ -1,0 +1,14 @@
+body {
+			background-image: url("https://raw.githubusercontent.com/kaylaludmila/burger/master/public/assets/img/burgersBG.jpg");
+			background-repeat: no-repeat;
+    	background-position: right top;
+    	background-attachment: fixed;
+    	color: #000034;
+    	font-family: 'Lato', sans-serif;
+    }
+    h1{
+    	color:#0d5b9d;
+    }
+    p{
+    	color:#352323;
+    }
