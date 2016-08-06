@@ -6,11 +6,11 @@ var methodOverride = require('method-override');
 
 var models = require('./models');
 
-app.get('/', function(req,res) {
+router.get('/', function(req,res) {
 	res.redirect('/burger')
 });
 
-app.get('/burger', function(req,res) {
+router.get('/burger', function(req,res) {
 	eat.selectAll(function(data){
 		var hbsObject = {burgers : data}
 		console.log(hbsObject)
