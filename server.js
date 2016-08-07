@@ -3,7 +3,7 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var Sequelize = require('sequelize');
 var models = require('./models');
-var PORT = process.env.PORT || 8080;
+// var PORT = process.env.PORT || 8080;
 
 var app = express();
 
@@ -23,8 +23,8 @@ var router = require('./controllers/burgers_controller.js');
 app.use('/', router);
 
 
-// app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 8080);
 
-app.listen(PORT, function(){
-    console.log('Eat some burgers on:  ' + PORT);
-});
+// app.listen(PORT, function(){
+//     console.log('Eat some burgers on:  ' + PORT);
+// });
