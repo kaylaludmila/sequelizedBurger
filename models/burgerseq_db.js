@@ -5,7 +5,16 @@ module.exports = function(sequelize, DataTypes) {
   var burgerSeq_db = sequelize.define('burgerSeq_db', {
     burger_name: DataTypes.STRING,
     devoured: DataTypes.BOOLEAN,
-    date: DataTypes.DATE()
+  createdAt: {
+     allowNull: false,
+     type: Sequelize.DATE,
+     defaultValue: Date.now()
+   },
+   updatedAt: {
+     allowNull: false,
+     type: Sequelize.DATE,
+     defaultValue: Date.now()
+    }
   }, {
     classMethods: {
       associate: function(models) {
